@@ -1,0 +1,461 @@
+
+*** Running vivado
+    with args -log testbench.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Feb  2 12:03:30 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source testbench.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.srcs/utils_1/imports/synth_1/testbench.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.srcs/utils_1/imports/synth_1/testbench.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top testbench -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 345114
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1870.219 ; gain = 419.828 ; free physical = 259 ; free virtual = 11398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'clk', assumed default net type 'wire' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mytestbench.sv:16]
+INFO: [Synth 8-11241] undeclared symbol 'clk_adc', assumed default net type 'wire' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mytestbench.sv:17]
+INFO: [Synth 8-11241] undeclared symbol 'reset', assumed default net type 'wire' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mytestbench.sv:19]
+INFO: [Synth 8-11241] undeclared symbol 'locked', assumed default net type 'wire' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mytestbench.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'testbench' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mytestbench.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.runs/synth_1/.Xil/Vivado-344840-archlinux/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.runs/synth_1/.Xil/Vivado-344840-archlinux/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mips' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mips.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'controller' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/controller.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/maindec.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/maindec.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/aludec.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/aludec.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/controller.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/datapath.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/flopr.sv:1]
+	Parameter WIDTH bound to: 32'sb00000000000000000000000000100000 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/flopr.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/adder.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/adder.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'sl2' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/sl2.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'sl2' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/sl2.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mux2.sv:1]
+	Parameter WIDTH bound to: 32'sb00000000000000000000000000100000 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mux2.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/regfile.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/regfile.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mux2.sv:1]
+	Parameter WIDTH bound to: 32'sb00000000000000000000000000000101 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mux2.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/signext.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/signext.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/alu.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/alu.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/datapath.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mips.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/imem.sv:1]
+INFO: [Synth 8-3876] $readmem data file 'datafile/test_data.mem' is read successfully [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/imem.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/imem.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'memory_map' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/memory_map.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/dmem.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/dmem.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'address_decoder' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/address_decoder.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'address_decoder' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/address_decoder.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'adc' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/adc.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.runs/synth_1/.Xil/Vivado-344840-archlinux/realtime/xadc_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.runs/synth_1/.Xil/Vivado-344840-archlinux/realtime/xadc_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/adc.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'thermocoder' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/thermocoder.sv:2]
+INFO: [Synth 8-226] default block is never used [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/thermocoder.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'ssd2ctrl' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/ssd2ctrl.sv:1]
+INFO: [Synth 8-226] default block is never used [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/ssd2ctrl.sv:74]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg' [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/sevenseg.sv:1]
+INFO: [Synth 8-226] default block is never used [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/sevenseg.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/sevenseg.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ssd2ctrl' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/ssd2ctrl.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'thermocoder' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/thermocoder.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'memory_map' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/memory_map.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/top.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'testbench' (0#1) [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/mytestbench.sv:1]
+WARNING: [Synth 8-3848] Net vp_in in module/entity adc does not have driver. [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/adc.sv:136]
+WARNING: [Synth 8-3848] Net vn_in in module/entity adc does not have driver. [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/adc.sv:137]
+WARNING: [Synth 8-6014] Unused sequential element decimal_reg was removed.  [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/sourceFiles/ssd2ctrl.sv:29]
+WARNING: [Synth 8-7129] Port addr[31] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[31] in module sl2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module sl2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[31] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[30] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[29] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[28] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[27] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[26] in module datapath is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1945.188 ; gain = 494.797 ; free physical = 287 ; free virtual = 11324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1963.000 ; gain = 512.609 ; free physical = 274 ; free virtual = 11312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1963.000 ; gain = 512.609 ; free physical = 274 ; free virtual = 11312
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1963.000 ; gain = 0.000 ; free physical = 274 ; free virtual = 11312
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'dut/mem_map/adc/your_instance_name'
+Finished Parsing XDC File [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'dut/mem_map/adc/your_instance_name'
+Parsing XDC File [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/constraintFiles/originalBasy3.xdc]
+Finished Parsing XDC File [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/constraintFiles/originalBasy3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/constraintFiles/originalBasy3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/testbench_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/testbench_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2094.742 ; gain = 0.000 ; free physical = 191 ; free virtual = 11292
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2094.742 ; gain = 0.000 ; free physical = 193 ; free virtual = 11293
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2094.742 ; gain = 644.352 ; free physical = 384 ; free virtual = 11240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2102.746 ; gain = 652.355 ; free physical = 384 ; free virtual = 11240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for vclk. (constraint file  /home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for vclk. (constraint file  /home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for dut/mem_map/adc/your_instance_name. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for instance_name. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2102.746 ; gain = 652.355 ; free physical = 385 ; free virtual = 11240
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'adc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                           000001 |                              000
+                      S1 |                           000010 |                              001
+                      S2 |                           000100 |                              010
+                      S3 |                           001000 |                              011
+                      S4 |                           010000 |                              100
+                      S5 |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'adc'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2102.746 ; gain = 652.355 ; free physical = 375 ; free virtual = 11231
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 9     
+	  18 Input   32 Bit        Muxes := 1     
+	   7 Input    9 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP dig03, operation Mode is: (A:0x3d090)*B.
+DSP Report: operator dig03 is absorbed into DSP dig03.
+WARNING: [Synth 8-7129] Port bin[3] in module ssd2ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bin[2] in module ssd2ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bin[1] in module ssd2ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bin[0] in module ssd2ctrl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2110.754 ; gain = 660.363 ; free physical = 330 ; free virtual = 11217
+---------------------------------------------------------------------------------
+ Sort Area is  dig03_0 : 0 0 : 693 693 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------+-----------+----------------------+------------------------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives                   | 
++------------+--------------------------+-----------+----------------------+------------------------------+
+|testbench   | dut/mem_map/dmem/RAM_reg | Implied   | 64 x 32              | RAM16X1S x 64 RAM32X1S x 32  | 
+|testbench   | dut/mips/dp/rf/rf_reg    | Implied   | 32 x 32              | RAM32M x 12                  | 
++------------+--------------------------+-----------+----------------------+------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ssd2ctrl    | (A:0x3d090)*B | 18     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 2166.754 ; gain = 716.363 ; free physical = 242 ; free virtual = 11137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2251.918 ; gain = 801.527 ; free physical = 257 ; free virtual = 11043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+--------------------------+-----------+----------------------+------------------------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives                   | 
++------------+--------------------------+-----------+----------------------+------------------------------+
+|testbench   | dut/mem_map/dmem/RAM_reg | Implied   | 64 x 32              | RAM16X1S x 64 RAM32X1S x 32  | 
+|testbench   | dut/mips/dp/rf/rf_reg    | Implied   | 32 x 32              | RAM32M x 12                  | 
++------------+--------------------------+-----------+----------------------+------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2267.934 ; gain = 817.543 ; free physical = 249 ; free virtual = 11035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dut/mem_map/adc/your_instance_name  has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dut/mem_map/adc/your_instance_name  has unconnected pin vn_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2397.746 ; gain = 947.355 ; free physical = 229 ; free virtual = 10942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2397.746 ; gain = 947.355 ; free physical = 229 ; free virtual = 10943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2397.746 ; gain = 947.355 ; free physical = 229 ; free virtual = 10943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2397.746 ; gain = 947.355 ; free physical = 221 ; free virtual = 10935
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2397.746 ; gain = 947.355 ; free physical = 221 ; free virtual = 10934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2397.746 ; gain = 947.355 ; free physical = 221 ; free virtual = 10934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ssd2ctrl    | A*B''       | 18     | 12     | -      | -      | 30     | 0    | 2    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_wiz  |     1|
+|2     |xadc_wiz |     1|
+|3     |CARRY4   |    52|
+|4     |DSP48E1  |     1|
+|5     |LUT1     |    11|
+|6     |LUT2     |    55|
+|7     |LUT3     |    67|
+|8     |LUT4     |    92|
+|9     |LUT5     |   186|
+|10    |LUT6     |   290|
+|11    |RAM16X1S |    64|
+|12    |RAM32M   |    10|
+|13    |RAM32X1D |     4|
+|14    |RAM32X1S |    32|
+|15    |FDCE     |     9|
+|16    |FDRE     |   125|
+|17    |FDSE     |     2|
+|18    |IBUF     |     3|
+|19    |OBUF     |    28|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2397.746 ; gain = 947.355 ; free physical = 221 ; free virtual = 10934
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2397.746 ; gain = 815.613 ; free physical = 221 ; free virtual = 10935
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2397.754 ; gain = 947.355 ; free physical = 221 ; free virtual = 10935
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2397.754 ; gain = 0.000 ; free physical = 382 ; free virtual = 11096
+INFO: [Netlist 29-17] Analyzing 163 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2453.773 ; gain = 0.000 ; free physical = 398 ; free virtual = 11112
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 110 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+Synth Design complete | Checksum: cfd2a82e
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 67 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:56 . Memory (MB): peak = 2453.773 ; gain = 1082.926 ; free physical = 397 ; free virtual = 11112
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1717.175; main = 1622.838; forked = 269.225
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3161.504; main = 2453.777; forked = 909.582
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2477.785 ; gain = 0.000 ; free physical = 397 ; free virtual = 11111
+INFO: [Common 17-1381] The checkpoint '/home/bill/Desktop/CODES/micro-processor/labs/lab6/final_project/final_project.runs/synth_1/testbench.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  2 12:04:31 2025...
