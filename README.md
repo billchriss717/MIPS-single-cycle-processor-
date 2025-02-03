@@ -110,3 +110,28 @@ address mapping for instruction and data memory, ensuring efficient communicatio
 the processor and memory components. This module instantiates the XADC wrapper for communication
 with the XADC, the thermocoder, as well as the Data memory.
 
+## Operation flow
+- **Fetching:** instruction memory reads the instruction from the address supplied by the current
+**PC** address.
+- **Decoding:** Extract instruction field and the control unit generates the appropriate signals
+required for instruction execution.
+- **Execution:** The Arithmetic and Logic Unit **ALU** performs the various computations while 
+the other components rout data as based on the generated control signals from the Control Unit.
+- **Memory Operations:** The memory map module handles the **load and store**  instructions 
+for both the **data Memory**  as well as the **memory-mapped IOs**.
+- **Write Back:** Results from either the **ALU** or the memory map module is written back into 
+register file(module regfile.sv).
+
+## Scalability and Enhancement
+The design is optimized for single-cycle operation but can be enhanced with pipelining. 
+Introducing pipeline registers between stages would transform it into a pipelined processor,
+boosting throughput and performance.
+
+## Authors
+Tadouanla Guetchuin Billy
+
+## Sources 
+**Book:** Harris Digital Desgin and Computer architecture.
+
+## License
+No license
