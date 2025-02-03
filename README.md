@@ -140,5 +140,7 @@ The following link is a video showing the Single-cycle MIPS processor with integ
 digital converter in action. Voltage values are displayed on the four digit seven segment display
 the 16 green LEDs indicating the voltage level from 0V to 1V. The higher the voltage the more LEDs 
 light up and vice versa.
+
 [Demo](https://youtube.com/shorts/PSQbqb3dG6c?feature=share)
-[Demo_Picture]()
+
+[Demo_Picture](https://github.com/billchriss717/MIPS-single-cycle-processor-/blob/main/media/photo_2025-02-03_21-28-49.jpg)
